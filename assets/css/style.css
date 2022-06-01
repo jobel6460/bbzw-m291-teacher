@@ -1,0 +1,511 @@
+/*importierte Schriftart*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Tangerine&display=swap');
+
+/*Grundlegendes Styling wenn nichts anderes definiert wird*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/*Styling der Titel*/
+h1{
+    font-size: 6rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+h2{
+    font-size: 4rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+/*Styling des Headers*/
+header{
+    background-image: url(../Bilder/titelbild2.jpg);
+    color: white;
+    text-align: center;
+    background-size: cover;
+    height: 1500px;
+}
+
+header h1 {
+    padding-top: 300px;
+}
+
+header p{
+    font-size: 5rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.pfeil-icon{
+    padding-top: 60px;
+    width: 30px;
+    height: 65px;
+}
+
+/*Styling der Navigation*/
+
+.navigation{
+    position: sticky;
+    top: 0;
+}
+
+.navigation-liste{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(39, 34, 34);
+    height: 4rem;
+}
+
+
+.navigation-liste li{
+    list-style: none;
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.navigation-liste a{
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    padding: 0 1rem 0 1rem
+}
+
+.navigation-liste a:hover{
+    color: rgb(255, 73, 173);
+}
+
+#hier{
+    color: rgb(255, 154, 210)
+}
+
+/*Styling der Sorten Vorschau*/
+#sorten-vorschau h2{
+    padding: 4rem;
+    text-align: center;
+}
+
+.sorten-vorschau-inhalt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f3f3f3;
+    height: 500px;
+}
+
+.sorten-vorschau-inhalt > img{
+    background-color: #f3f3f3;
+    color: white;    
+    text-align: center;
+    font-size: 30px;
+}
+
+.bild-bestseller{
+    width: 200px;
+    height: 430px;
+    padding: 50px 40px 0 40px;
+}
+
+/*Styling des Produktion-Textes*/
+.produktion{
+    margin: 50px 25% 50% 25%;
+}
+
+.produktion h2{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.produktion p{
+    text-align: justify;
+}
+
+/*Styling des Footers*/
+.footerinhalt{
+    color: white;
+    background-color: rgb(39, 34, 34);
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -750px;
+    padding-right: 0;
+}
+
+.footer-adresse{
+    padding: 2.4rem 0 0 4rem;
+}
+
+.footerinhalt li{
+    list-style: none;
+}
+
+.pfeil-nach-oben{
+    padding-left: 80%;
+}
+
+.pfeil-nach-oben-bild{
+    padding-top: 4.8rem;
+    width: 35px;
+    height: 35px;
+}
+
+/*Responsive Design mit media queries*/
+@media screen and (max-width: 1899px){
+
+    header{
+        background-image: url(../Bilder/titelbild2.jpg);
+        color: white;
+        text-align: center;
+        background-size: cover;
+        height: 900px;
+    }
+
+    .produktion{
+        margin: 50px 20% 50% 20%;
+    }
+
+    header h1 {
+        padding-top: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1680px){
+
+    .footerinhalt{
+        color: white;
+        background-color: rgb(39, 34, 34);
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        margin-top: -600px;
+        padding-right: 0;
+    }
+
+    .pfeil-nach-oben{
+        padding-left: 75%;
+    }
+
+    .produktion{
+        margin: 50px 15% 50% 15%;
+    }
+}
+
+@media screen and (max-width: 1358px){
+    .footerinhalt{
+        color: white;
+        background-color: rgb(39, 34, 34);
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        margin-top: -400px;
+        padding-right: 0;
+    }
+
+    .pfeil-nach-oben{
+        padding-left: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .sorten-vorschau-inhalt img{
+        width: 150px;
+        height: 300px;
+    }
+
+    .sorten-vorschau-inhalt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f3f3f3;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 1070px){
+
+    .pfeil-nach-oben{
+        padding-left: 65%;
+    }
+}
+
+@media screen and (max-width: 905px){
+
+    .pfeil-nach-oben{
+        padding-left: 60%;
+    }
+
+    .footerinhalt{
+        color: white;
+        background-color: rgb(39, 34, 34);
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        margin-top: -300px;
+        padding-right: 0;
+    }
+
+    .bild-bestseller{
+        width: 200px;
+        height: 430px;
+        padding: 50px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    
+    .pfeil-nach-oben{
+        padding-left: 55%;
+    }
+
+    .footerinhalt{
+        color: white;
+        background-color: rgb(39, 34, 34);
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        margin-top: -200px;
+        padding-right: 0;
+    }
+
+    .bild-bestseller{
+        width: 200px;
+        height: 430px;
+        padding: 50px 40px 0 40px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Amatic SC', cursive;
+    }
+    
+    header p{
+        font-size: 3rem;
+        font-family: 'Amatic SC', cursive;
+    }
+
+    .produktion{
+        margin: 50px 10% 50% 10%;
+    }
+
+    .sorten-vorschau-inhalt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f3f3f3;
+        height: 800px;
+        flex-wrap: wrap;
+    }
+
+    h2{
+        font-size: 3rem;
+        font-family: 'Amatic SC', cursive;
+        font-weight: lighter;
+    }
+}
+
+@media screen and (max-width: 666px){
+
+    .pfeil-nach-oben{
+        padding-left: 47%;
+    }
+}
+
+@media screen and (max-width: 539px){
+
+    .pfeil-nach-oben{
+        padding-left: 35%;
+    }
+
+    .bild-bestseller{
+        width: 200px;
+        height: 430px;
+        padding: 50px 30px 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .produktion p{
+        text-align: justify;
+        font-size: smaller;
+    }
+
+    .navigation-liste a{
+        font-size: 18px;
+    }
+
+    .pfeil-nach-oben{
+        padding-left: 25%;
+    }
+
+    .bild-bestseller{
+        width: 200px;
+        height: 430px;
+        padding: 50px 10px 0 10px;
+    }
+
+    .footerinhalt{
+        color: white;
+        background-color: rgb(39, 34, 34);
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        margin-top: -100px;
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-family: 'Amatic SC', cursive;
+    }
+    
+    header p{
+        font-size: 2.5rem;
+        font-family: 'Amatic SC', cursive;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        font-family: 'Amatic SC', cursive;
+        font-weight: lighter;
+    }
+
+    header{
+        background-image: url(../Bilder/titelbild2.jpg);
+        color: white;
+        text-align: center;
+        background-size: cover;
+        height: 823px;
+    }
+
+    header h1 {
+        padding-top: 230px;
+    }
+
+    
+}
+
+@media screen and (max-width: 380px){
+    .footer-adresse{
+        padding: 2.4rem 0 0 2rem;
+    }
+
+    .bild-bestseller{
+        width: 200px;
+        height: 430px;
+        padding: 50px 5px 0 5px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-family: 'Amatic SC', cursive;
+    }
+    
+    header p{
+        font-size: 2rem;
+        font-family: 'Amatic SC', cursive;
+    }
+
+    h2{
+        font-size: 2rem;
+        font-family: 'Amatic SC', cursive;
+        font-weight: lighter;
+    }
+
+    header{
+        background-image: url(../Bilder/titelbild2.jpg);
+        color: white;
+        text-align: center;
+        background-size: cover;
+        height: 667px;
+    }
+
+    header h1 {
+        padding-top: 190px;
+    }
+
+    .navigation-liste a{
+        padding: 0 0.5rem 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .navigation-liste a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .pfeil-nach-oben{
+        padding-left: 12%;
+    }
+
+    header{
+        background-image: url(../Bilder/titelbild2.jpg);
+        color: white;
+        text-align: center;
+        background-size: cover;
+        height: 568px;
+    }
+
+    header h1 {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 319px){
+
+    .bild-bestseller{
+        width: 200px;
+        height: 430px;
+        padding: 20px 10px 0 10px;
+    }
+
+    .sorten-vorschau-inhalt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f3f3f3;
+        height: 1300px;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+        font-family: 'Amatic SC', cursive;
+    }
+    
+    header p{
+        font-size: 1.7rem;
+        font-family: 'Amatic SC', cursive;
+    }
+
+    h2{
+        font-size: 1.7rem;
+        font-family: 'Amatic SC', cursive;
+        font-weight: lighter;
+    }
+    
+    .navigation-liste li{
+        list-style: none;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    header{
+        background-image: url(../Bilder/titelbild2.jpg);
+        color: white;
+        text-align: center;
+        background-size: cover;
+        height: 653px;
+    }
+
+    header h1 {
+        padding-top: 200px;
+    }
+}

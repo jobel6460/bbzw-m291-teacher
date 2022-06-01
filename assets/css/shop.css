@@ -1,0 +1,354 @@
+/*importierte Schriftart*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Tangerine&display=swap');
+
+/*Grundlegendes Styling wenn nichtsanderes definiert wird*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*Stiyling der Titel*/
+h1{
+    font-size: 6rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+}
+
+/*Styling des Headers*/
+header{
+    background-image: url(../Bilder/titelbild2.jpg);
+    color: white;
+    text-align: center;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+header p{
+    font-size: 5rem;
+    font-family: 'Amatic SC', cursive;
+    padding-top: 60px;
+}
+
+/*Styling der Navigation*/
+.navigation-liste{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-liste li{
+    list-style: none;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.navigation-liste a{
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    padding: 0 1rem 0 1rem
+}
+
+.navigation-liste a:hover{
+    color: rgb(255, 73, 173);
+}
+
+#hier{
+    color: rgb(255, 154, 210)
+}
+
+/*Styling der Team Seite mit den Kacheln*/
+  .about-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    border-radius: 10px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10% 0 10%;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+
+  .product-placement{
+    display: flex;
+    justify-content: center;
+  }
+
+  .produktbild{
+    width: 30%;
+    margin-top: 20px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(39, 34, 34);
+    font-size: smaller;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .description{
+    margin-bottom: 5px;
+  }
+
+  #menge{
+    border: 2px solid rgb(39, 34, 34);
+    border-radius: 5px;
+  }
+  
+  .button {   
+    border: none;
+    outline: 0;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px;
+    color: white;
+    background-color: rgb(39, 34, 34);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  #team-titel {
+    padding: 4rem;
+    text-align: center;
+  }
+
+  /*Styling des Footers*/
+  .footerinhalt{
+    color: white;
+    background-color: rgb(39, 34, 34);
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+    margin-top: 120px;
+  }
+
+.footer-adresse{
+    padding: 2.4rem 0 0 4rem;
+}
+
+.footerinhalt li{
+    list-style: none;
+}
+
+.pfeil-nach-oben{
+    padding-left: 80%;
+}
+
+.pfeil-nach-oben-bild{
+    padding-top: 4.8rem;
+    width: 35px;
+}
+
+ 
+/*Responsive Design mit media queries*/
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+@media screen and (max-width: 1680px){
+
+  .pfeil-nach-oben{
+      padding-left: 75%;
+  }
+
+}
+
+@media screen and (max-width: 1358px){
+
+  .pfeil-nach-oben{
+      padding-left: 70%;
+  }
+}
+
+@media screen and (max-width: 1070px){
+
+  .pfeil-nach-oben{
+      padding-left: 65%;
+  }
+}
+
+@media screen and (max-width: 905px){
+
+  .pfeil-nach-oben{
+      padding-left: 60%;
+  }
+
+}
+
+@media screen and (max-width: 810px){
+  .row{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 760px){
+  
+  .pfeil-nach-oben{
+      padding-left: 55%;
+  }
+
+
+  h1 {
+      font-size: 4rem;
+      font-family: 'Amatic SC', cursive;
+  }
+  
+  header p{
+      font-size: 3rem;
+      font-family: 'Amatic SC', cursive;
+      padding-top: 80px;
+  }
+
+  h2{
+      font-size: 3rem;
+      font-family: 'Amatic SC', cursive;
+      font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 666px){
+
+  .pfeil-nach-oben{
+      padding-left: 47%;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 539px){
+
+  .pfeil-nach-oben{
+      padding-left: 35%;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+
+  .pfeil-nach-oben{
+      padding-left: 25%;
+  }
+
+  .navigation-liste a{
+      font-size: 18px;
+  }
+
+
+  h1 {
+      font-size: 3.5rem;
+      font-family: 'Amatic SC', cursive;
+  }
+  
+
+  
+}
+
+@media screen and (max-width: 380px){
+  .footer-adresse{
+      padding: 2.4rem 0 0 2rem;
+  }
+
+  h1 {
+      font-size: 3rem;
+      font-family: 'Amatic SC', cursive;
+  }
+  
+  header p{
+      font-size: 2.5rem;
+      font-family: 'Amatic SC', cursive;
+  }
+
+  h2{
+      font-size: 2rem;
+      font-family: 'Amatic SC', cursive;
+      font-weight: lighter;
+  }
+
+  .navigation-liste a{
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+}
+
+@media screen and (max-width: 330px){
+  .navigation-liste a{
+      font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 320px){
+
+  .pfeil-nach-oben{
+      padding-left: 12%;
+  }
+
+  input{
+      width: 180px;
+  }
+}
+
+@media screen and (max-width: 319px){
+
+  h1 {
+      font-size: 2.7rem;
+      font-family: 'Amatic SC', cursive;
+  }
+  
+  header p{
+      font-size: 2rem;
+      font-family: 'Amatic SC', cursive;
+  }
+
+  h2{
+      font-size: 1.7rem;
+      font-family: 'Amatic SC', cursive;
+      font-weight: lighter;
+  }
+  
+  .navigation-liste li{
+      list-style: none;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+  }
+
+}
