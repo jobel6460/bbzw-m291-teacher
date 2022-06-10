@@ -2,91 +2,95 @@
 <html lang="de">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Verlinkung des CSS Files-->
-  <link rel="stylesheet" href="assets/css/formular.css">
-  <title>Bestellormular</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Verlinkung des CSS files-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Chocolate Shop</title>
 </head>
 
 <body>
+    <!--Aufbau des Headers-->
+    <header>
 
-  <!--Aufbau des Headers-->
-  <header>
-    <!--Aufbau der Navigation-->
-    <nav class="navigation">
-      <ul class="navigation-liste">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="formular.html" id="hier">Bestellformular</a></li>
-      </ul>
-    </nav>
-    <p>Bestellformular</p>
-  </header>
+        <!--Aufbau der Navigation-->
+        <nav class="navigation">
+            <ul class="navigation-liste">
+                <li><a href="index.html" id="hier">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="formular.html">Anmelden</a></li>
+                <li><a href="game.html">Game</a></li>
+            </ul>
+        </nav>
+        <h1>CHOCOLATE FACTORY</h1>
+        <p>feinste schweizer Schokolade</p>
 
+        <img class="pfeil-icon" src="assets/Bilder/scroll-icon.png" alt="scroll-icon" title="nach unten scrollen">
+    </header>
 
-  <!--Aufbau der Formular Seite-->
-  <section class="formular">
-    <section class="bestellformular-inhalt">
-
-      <h2>JETZT BESTELLEN</h2>
-
-      <p class="bestellformular-einleitungstext">Mit diesem Formular können sie unsere Schokolade bestellen.<br>Eine
-        Tafel Schokolade ist 100g schwehr.</p><br>
-      <!--Aufbau des Formulars mit der validateForm FUnktion und der Aktion-->
-      <form name="bestellformular" class="bestellformular" onsubmit="return validateForm()" action="speichern.php"
-        method="post">
-
-        <div class="eingabefelder">
-          <!--Eingabefeld für den Nachnamen-->
-          <label for="name">Name </label><br>
-          <input type="text" id="name" name="name" required><br>
-          <!--div mit error Klasse und ...Err id für die Validierung-->
-          <div class="error" id="nameErr"></div>
-
-          <!--Eingabefeld für den Vornamen-->
-          <label for="vorname">Vorname </label><br>
-          <input type="text" id="vorname" name="vorname" required><br>
-          <!--div mit error Klasse und ...Err id für die Validierung-->
-          <div class="error" id="vornameErr"></div>
-
-          <!--Eingabefeld für die E-Mail Adresse-->
-          <label for="mail">E-Mail </label><br>
-          <input type="email" id="mail" name="mail" required>
-          <!--div mit error Klasse und ...Err id für die Validierung-->
-          <div class="error" id="mailErr"></div>
-
-        <!--Button um alle Eingaben zurückzusetzen-->
-        <div class="loeschbutton">
-          <button type="reset">Zurücksetzen</button>
+    <!--Aufbau der Sortenvorschau-->
+    <section id="sorten-vorschau">
+        <h2>UNSERE BELIEBTESTEN SORTEN</h2>
+        <div class="sorten-vorschau-inhalt">
+            <img class="bild-bestseller" src="assets/Bilder/pink-rose.png" alt="pink-roses" title="Pink Roses">
+            <img class="bild-bestseller" src="assets/Bilder/salted-peanuts.png" alt="salted-peanuts" title="Salted Peanuts">
+            <img class="bild-bestseller" src="assets/Bilder/crispy-chocolat.png" alt="crispy-chocolate" title="Crispy Chocolate">
+            <img class="bild-bestseller" src="assets/Bilder/coconut-milk.png" alt="coconut-milk" title="Coconut Milk">
         </div>
-
-        <!--Button um das Formular abzusenden-->
-        <div class="sendebutton">
-          <button type="submit">Senden</button>
-        </div>
-      </form>
-
-      <!--Verlinkund des Javascript files für die Validierung-->
-      <script src="Script/validierung.js"></script>
-
     </section>
-  </section>
 
-  <!--Aufbau des Footers-->
-  <footer class="footerinhalt">
-    <ul class="footer-adresse">
-      <li>Chocolate Shop GmbH</li>
-      <li>Mustergasse 22</li>
-      <li>2222 Musterburg</li>
-      <li>T 041 322 22 22</li>
-      <li class="email-footer">info@chocolateshop.ch</li>
-    </ul>
+    <!--Inhalt des Produktion-Texts auf der Startseite-->
+    <div class="produktion">
+        <h2>PRODUKTION</h2><br>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sed cumque deserunt harum praesentium,
+            laborum voluptates fugiat eligendi labore laboriosam eos, impedit aliquid molestias voluptatem corrupti.
+            Quis illo nemo hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, possimus at
+            similique
+            maiores adipisci optio temporibus vero repellat totam labore doloribus, reiciendis harum id rerum quasi!
+            Ab dolore excepturi corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eos nisi
+            earum sunt exercitationem ab, quaerat maiores perferendis dolore in quibusdam omnis recusandae. Adipisci
+            nostrum facilis deserunt officiis consequuntur dolores. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Natus non ipsa, ipsum cumque maiores eveniet asperiores ut quaerat similique, molestiae voluptatem minus
+            suscipit,
+            aspernatur odio iure fuga culpa obcaecati quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolores harum nulla excepturi quibusdam autem adipisci quas eaque similique, delectus necessitatibus quo
+            commodi ex a maxime dolorum consequatur nisi labore odit! lorem lorem Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Fuga ea nisi veritatis unde nihil minus maxime, ut rem quidem illo libero dolorum quam nam
+            labore aut consectetur sapiente enim suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptas
+            nobis blanditiis enim sequi est esse velit reprehenderit voluptatum hic sapiente. Sit repellendus, dolorum
+            velit consequatur at veniam est mollitia architecto. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+            Assumenda nam asperiores ullam autem obcaecati provident? Voluptatem illo similique natus unde cum, fuga
+            error
+            quam odio? Omnis corrupti atque possimus maxime! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Animi,
+            temporibus modi ipsum tenetur illo aliquam eveniet voluptatem deserunt rerum magni explicabo? Veritatis
+            ipsam
+            amet aliquam facilis odit, molestias vero illum? Lorem ipsum dolor sit amet consectetur adipisicing elit
+            dam.
+            dolor sit amet consectetur blanditis vero.
+        </p>
+    </div>
 
-    <!--Icon unten Rechts im Footer um mit einem Klick wieder nach Oben zu gelangen-->
-    <a href="#top" class="pfeil-nach-oben"><img class="pfeil-nach-oben-bild" src="assets/Bilder/pfeil-nach-oben.png"
-        alt="pfeil-nach-oben" title="nach oben"></a>
-  </footer>
+    <!--Aufbau des Footers-->
+    <footer class="footerinhalt">
+        <ul class="footer-adresse">
+            <li>Chocolate Shop GmbH</li>
+            <li>Mustergasse 22</li>
+            <li>2222 Musterburg</li>
+            <li>T 041 322 22 22</li>
+            <li class="email-footer">info@chocolateshop.ch</li>
+        </ul>
+
+        <!--Icon unten Rechts im Footer um mit einem Klick wieder nach Oben zu gelangen-->
+        <a href="#top" class="pfeil-nach-oben"><img class="pfeil-nach-oben-bild" src="assets/Bilder/pfeil-nach-oben.png"
+                alt="pfeil-nach-oben" title="nach oben"></a>
+    </footer>
 </body>
 
 </html>
