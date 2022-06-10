@@ -21,30 +21,25 @@ h2{
     font-weight: lighter;
 }
 
-/*Styling des Headers*/
-header{
-    background-image: url(../Bilder/titelbild2.jpg);
-    color: white;
-    text-align: center;
-    background-size: cover;
-    height: 300px;
-}
-
-header p{
-    font-size: 5rem;
-    font-family: 'Amatic SC', cursive;
-    padding-top: 60px;
-}
 
 /*Styling der Navigation*/
+.navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .navigation-liste{
     display: flex;
     justify-content: center;
+    background-color: rgb(39, 34, 34);
+    height: 4rem;
 }
+
 
 .navigation-liste li{
     list-style: none;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     font-size: 1.5rem;
 }
 
@@ -64,52 +59,40 @@ header p{
     color: rgb(255, 154, 210)
 }
 
-/*Styling des Formulars*/
-.formular{
-    margin: 70px 20px 70px 25%;
+.anmeldeformular-inhalt h2{
+    display: flex;
+    justify-content: center;
+    margin: 15% 0 0.5rem 0;
 }
 
-.bestellformular-inhalt h2{
-    padding-bottom: 20px;
-}
-
-.bestellformular-inhalt p{
-    font-weight: bold;
+.anmeldeformular-inhalt p{
+    display: flex;
+    justify-content: center;
     font-size: 15px;
-    padding-bottom: 10px;
+    margin-bottom: 2rem;
+}
+
+.anmeldeformular{
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    justify-content: center;
+    margin: 0 40% 15% 40%;
+    padding: 3rem;
+    border-radius: 25px;
 }
 
 .eingabefelder input{
     margin-bottom: 10px;
+    width: 700px;
 }
 
-label{
-    font-weight: bold;
-}
 
 input{
     border: 2px solid rgb(39, 34, 34);
     border-radius: 5px;
-    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-textarea{
-    margin-top: 0.2rem;
-    border: 2px solid rgb(39, 34, 34);
-    border-radius: 5px;
-    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-    width: 220px;
-    height: 150px;
-}
-
-.multiplechoice label{
-    font-weight: normal;
-}
-
-.multiplechoice{
-    width: 150px;
-    margin: 0;
-}
 
 #pink-roses{
     margin-left: 50px;
@@ -142,9 +125,9 @@ textarea{
     margin-left: 10px;
 }
 
-#name, #vorname, #adresse, #postleitzahlundort, #mail, #telefon{
+#name, #vorname, #mail{
     height: 22px;
-    width: 200px;
+    width: 300px;
 }
 
 /*Styling der Fehlermeldung der Javascript-Validierung*/
@@ -155,13 +138,15 @@ textarea{
 }
 
 button{
-color: white;
-background-color:rgb(39, 34, 34);
-border: none;
-padding: 0.5rem 1rem 0.5rem 1rem;
-border-radius: 5px;
-margin-top: 1rem;
-cursor: pointer;
+    color: white;
+    background-color:rgb(39, 34, 34);
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
 }
 
 button:hover{
