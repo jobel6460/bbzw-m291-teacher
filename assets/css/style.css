@@ -48,8 +48,9 @@ header p{
 /*Styling der Navigation*/
 
 .navigation{
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
 }
 
 .navigation-liste{
@@ -132,6 +133,8 @@ header p{
     flex-direction: row;
     margin-top: -750px;
     padding-right: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-adresse{
