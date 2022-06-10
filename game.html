@@ -1,29 +1,47 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@jobel6460 
+amiga909
+/
+bbzw-m291-teacher
+Public
+Code
+Issues
+Pull requests
+3
+Actions
+Projects
+Wiki
+Security
+Insights
+bbzw-m291-teacher/game.html
+@roman-hatz-srf
+roman-hatz-srf new game version
+Latest commit d310923 14 hours ago
+ History
+ 2 contributors
+@roman-hatz-srf@amiga909
+90 lines (61 sloc)  1.72 KB
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game</title>
+  <title>Dino Game</title>
   <link rel="stylesheet" href="assets/css/game.css">
 
 </head>
 
 <body>
-  <header>
-    <!--Aufbau der Navigation-->
-    <nav class="navigation">
-      <ul class="navigation-liste">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="formular.html">Anmelden</a></li>
-        <li><a href="game.html" id="hier">Game</a></li>
-      </ul>
-    </nav>
 
-    <p>SHOP</p>
-
-  </header>
 </body>
 
 </html>
@@ -36,7 +54,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online-Shop Marketing Game - Shop Page</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -56,25 +74,37 @@
 
   </div>
 
-  <div class="content">
-    <div class="gameInfo">
-      Click to start the game.<br>
-      Click to jump.
+  <div class="content content-game">
+
+
+
+    <div class="gameRow gameInfo">
+      Weichen Sie den Hindernissen aus.
+      Klicken Sie, um zu springen.
     </div>
 
-    <div id="game" class="game-disabled">
+
+    <div id="game">
+      <div class="startScreen" id="startScreen">
+        <div class="startScreenText">
+          Klicken Sie, um das Spiel zu starten.
+        </div>
+      </div>
+
       <div id="background"></div>
       <div id="dino"></div>
       <div id="rock"></div>
     </div>
-    <div id="score">0</div>
-    <div class="highscore">
+
+
+    <div class="gameRow score" id="score">0</div>
+    <div class="gameRow highscore">
       Highscore <span id="highscore-value">0</span>
     </div>
 
-    <div class="gameOver" id="gameOver">
-      Glückwunsch, Sie haben einen Preis gewonnen!<br>
-      <a href="./shop.html">Link zum Shop</a>
+    <div class="gameRow gameOver" id="gameOver">
+      Glückwunsch, Sie haben einen neuen Highscore erzielt!<br>
+      Besuchen Sie unseren <a href="./shop.html">Shop</a> und lösen Sie ihren Gewinn ein.
     </div>
 
 
@@ -89,3 +119,16 @@
 </body>
 
 </html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
