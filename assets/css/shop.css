@@ -39,27 +39,36 @@ header p{
 }
 
 /*Styling der Navigation*/
-.navigation-liste{
-    display: flex;
-    justify-content: center;
+.navigation{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+.navigation-liste{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 34, 34);
+  height: 4rem;
+}
+
+
 .navigation-liste li{
-    list-style: none;
-    margin-top: 2rem;
-    font-size: 1.5rem;
+  list-style: none;
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .navigation-liste a{
-    text-decoration: none;
-    text-align: right;
-    color: white;
-    font-family: 'Amatic SC', cursive;
-    padding: 0 1rem 0 1rem
+  text-decoration: none;
+  text-align: right;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  padding: 0 1rem 0 1rem
 }
 
 .navigation-liste a:hover{
-    color: rgb(255, 73, 173);
+  color: rgb(255, 73, 173);
 }
 
 #hier{
@@ -154,6 +163,8 @@ header p{
     flex-direction: row;
     padding-right: 0;
     margin-top: 120px;
+    bottom: 0;
+    width: 100%;
   }
 
 .footer-adresse{
