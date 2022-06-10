@@ -1,27 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino Game</title>
-    <link rel="stylesheet" href="assets/css/game.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="assets/css/game.css">
 
-  </head>
+</head>
 
-  <body>
-    <div id="game">
+<body>
+  <header>
+    <!--Aufbau der Navigation-->
+    <nav class="navigation">
+      <ul class="navigation-liste">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="formular.html">Anmelden</a></li>
+        <li><a href="game.html" id="hier">Game</a></li>
+      </ul>
+    </nav>
+
+    <p>SHOP</p>
+
+  </header>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online-Shop Marketing Game - Shop Page</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="header">
+
+    <div class="logo">
+      <a href="./index.html">Logo</a>
+    </div>
+
+    <div class="title">
+      Online-Shop Marketing Game - Startseite
+    </div>
+
+    <div class="linkToShop">
+      <a href="./shop.html">Link zum Shop</a>
+    </div>
+
+  </div>
+
+  <div class="content">
+    <div class="gameInfo">
+      Click to start the game.<br>
+      Click to jump.
+    </div>
+
+    <div id="game" class="game-disabled">
       <div id="background"></div>
       <div id="dino"></div>
       <div id="rock"></div>
     </div>
     <div id="score">0</div>
     <div class="highscore">
-      Highscore: <span id="highscore-value">0</span>
+      Highscore <span id="highscore-value">0</span>
+    </div>
+
+    <div class="gameOver" id="gameOver">
+      Glückwunsch, Sie haben einen Preis gewonnen!<br>
+      <a href="./shop.html">Link zum Shop</a>
     </div>
 
 
-    <script src="assets/js/game.js"></script>
-  </body>
+
+  </div>
+
+  <div class="footer">
+    about us ... about us ... about us ...
+  </div>
+
+  <script src="assets/js/game.js"></script>
+</body>
 
 </html>
