@@ -1,85 +1,32 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@jobel6460 
-amiga909
-/
-bbzw-m291-teacher
-Public
-Code
-Issues
-Pull requests
-3
-Actions
-Projects
-Wiki
-Security
-Insights
-bbzw-m291-teacher/game.html
-@roman-hatz-srf
-roman-hatz-srf new game version
-Latest commit d310923 14 hours ago
- History
- 2 contributors
-@roman-hatz-srf@amiga909
-90 lines (61 sloc)  1.72 KB
-
-
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dino Game</title>
-  <link rel="stylesheet" href="assets/css/game.css">
-
-</head>
-
-<body>
-
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online-Shop Marketing Game - Shop Page</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/game.css">
 </head>
 
 <body>
-  <div class="header">
-
-    <div class="logo">
-      <a href="./index.html">Logo</a>
-    </div>
-
-    <div class="title">
-      Online-Shop Marketing Game - Startseite
-    </div>
-
-    <div class="linkToShop">
-      <a href="./shop.html">Link zum Shop</a>
-    </div>
-
-  </div>
+  <header>
+    <!--Aufbau der Navigation-->
+    <nav class="navigation">
+      <ul class="navigation-liste">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="formular.html" id="hier">Anmelden</a></li>
+        <li><a href="game.html">Game</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <div class="content content-game">
 
-
+    <h2 class="game-titel">Chocolate Rush</h2>
 
     <div class="gameRow gameInfo">
-      Weichen Sie den Hindernissen aus.
+      Weichen Sie dem Gemüse aus und sammeln Sie so viel Schokolade wie möglich.<br>
       Klicken Sie, um zu springen.
     </div>
 
@@ -97,7 +44,10 @@ Latest commit d310923 14 hours ago
     </div>
 
 
-    <div class="gameRow score" id="score">0</div>
+    <!--<div class="gameRow score" id="score">0</div>-->
+    <div class="gameRow score">
+      Kalorien-Counter <span id="score">0</span>
+    </div>
     <div class="gameRow highscore">
       Highscore <span id="highscore-value">0</span>
     </div>
@@ -111,24 +61,22 @@ Latest commit d310923 14 hours ago
 
   </div>
 
-  <div class="footer">
-    about us ... about us ... about us ...
-  </div>
-
+    <!--Aufbau des Footers
+  <footer class="footerinhalt">
+    <ul class="footer-adresse">
+      <li>Chocolate Shop GmbH</li>
+      <li>Mustergasse 22</li>
+      <li>2222 Musterburg</li>
+      <li>T 041 322 22 22</li>
+      <li class="email-footer">info@chocolateshop.ch</li>
+    </ul>
+-->
+    <!--Icon unten Rechts im Footer um mit einem Klick wieder nach Oben zu gelangen
+    <a href="#top" class="pfeil-nach-oben"><img class="pfeil-nach-oben-bild" src="assets/Bilder/pfeil-nach-oben.png"
+        alt="pfeil-nach-oben" title="nach oben"></a>
+  </footer>
+-->
   <script src="assets/js/game.js"></script>
 </body>
 
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
