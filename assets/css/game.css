@@ -1,39 +1,49 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@jobel6460 
-amiga909
-/
-bbzw-m291-teacher
-Public
-Code
-Issues
-Pull requests
-3
-Actions
-Projects
-Wiki
-Security
-Insights
-bbzw-m291-teacher/assets/css/game.css
-@roman-hatz-srf
-roman-hatz-srf new game version
-Latest commit d310923 14 hours ago
- History
- 2 contributors
-@amiga909@roman-hatz-srf
-131 lines (103 sloc)  1.7 KB
-
 
 body {
   font-family: "Courier";
 }
 
+.navigation{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigation-liste{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 34, 34);
+  height: 4rem;
+}
+
+
+.navigation-liste li{
+  list-style: none;
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.navigation-liste a{
+  text-decoration: none;
+  text-align: right;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  padding: 0 1rem 0 1rem
+}
+
+.navigation-liste a:hover{
+  color: rgb(255, 73, 173);
+}
+
+#hier{
+  color: rgb(255, 154, 210)
+}
+.game-titel{
+  text-align: center;
+}
+
 .content-game {
+  margin-top: 10%;
   min-height: 600px;
   font-size: 1.5rem;
 }
@@ -50,9 +60,9 @@ body {
 #dino {
   height: 75px;
   width: 75px;
-  top: 225px;
+  top: 220px;
   position: relative;
-  background-image: url("https://github.com/kriscfoster/chrome-dino-game/blob/master/dino.png?raw=true");
+  background-image: url(../Bilder/chad-75.png);
   background-size: cover;
 }
 
@@ -66,7 +76,7 @@ body {
   position: relative;
   top: 175px;
   left: 550px;
-  background-image: url("https://github.com/kriscfoster/chrome-dino-game/blob/master/rock.png?raw=true");
+  background-image: url(../Bilder/salad.png);
   background-size: cover;
 }
 
@@ -112,7 +122,7 @@ body {
   position: absolute;
   width: 600px;
   height: 300px;
-  background-image: url("https://github.com/kriscfoster/chrome-dino-game/blob/master/background.jpg?raw=true");
+  background-image: url(../Bilder/store.png);
   background-size: cover;
 }
 
@@ -129,7 +139,6 @@ body {
     background-position: -600px 0;
   }
 }
-
 
 .gameRow {
   text-align: center;
@@ -160,16 +169,36 @@ body {
 
 
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+
+/*Styling des Footers
+.footerinhalt{
+  color: white;
+  background-color: rgb(39, 34, 34);
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -750px;
+  padding-right: 0;
+  bottom: 0;
+  position: sticky;
+  width: 100%;
+}
+
+.footer-adresse{
+  padding: 2.4rem 0 0 4rem;
+}
+
+.footerinhalt li{
+  list-style: none;
+}
+
+.pfeil-nach-oben{
+  padding-left: 80%;
+}
+
+.pfeil-nach-oben-bild{
+  padding-top: 4.8rem;
+  width: 35px;
+  height: 35px;
+}
+*/
