@@ -3,7 +3,7 @@ const name = document.getElementById("name")
 const vorname = document.getElementById("vorname")
 const mail = document.getElementById("mail")
 
-submit.disabled = true
+submit.disabled = false
 
 
 submit.addEventListener("click", async (event) => {
@@ -14,7 +14,8 @@ submit.addEventListener("click", async (event) => {
     }
     else {
         // Weiterleitung auf die Game Page  
-        location.href = "./game.html"
+        location.href = "game.html"
     }
 
 })
+
