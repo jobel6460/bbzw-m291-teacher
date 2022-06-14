@@ -15,8 +15,9 @@
       <ul class="navigation-liste">
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><a href="formular.html" id="hier">Anmelden</a></li>
-        <li><a href="game.html">Game</a></li>
+        <!--Weiterleitung an Anmelde Seite bevor Besucher zu game kommt-->
+        <li><a href="formular.html" id="hier">Chocolate Rush</a></li>
+        <!--<li><a href="game.html">Chocolate Rush</a></li>-->
       </ul>
     </nav>
   </header>
@@ -41,6 +42,7 @@
       <div id="background"></div>
       <div id="dino"></div>
       <div id="rock"></div>
+      <div id="goodie"></div>
     </div>
 
 
@@ -48,20 +50,25 @@
     <div class="gameRow score">
       Kalorien-Counter <span id="score">0</span>
     </div>
+
+    <div class="gameRow">Schokolade <span id="goodies-value">0</span> </div>
+
     <div class="gameRow highscore">
       Highscore <span id="highscore-value">0</span>
     </div>
 
+
     <div class="gameRow gameOver" id="gameOver">
       Glückwunsch, Sie haben einen neuen Highscore erzielt!<br>
       Besuchen Sie unseren <a href="./shop.html">Shop</a> und lösen Sie ihren Gewinn ein.
+      Glückwunsch...!<br>
     </div>
 
 
 
   </div>
 
-    <!--Aufbau des Footers
+    <!--Aufbau des Footers-->
   <footer class="footerinhalt">
     <ul class="footer-adresse">
       <li>Chocolate Shop GmbH</li>
@@ -70,12 +77,12 @@
       <li>T 041 322 22 22</li>
       <li class="email-footer">info@chocolateshop.ch</li>
     </ul>
--->
-    <!--Icon unten Rechts im Footer um mit einem Klick wieder nach Oben zu gelangen
+
+    <!--Icon unten Rechts im Footer um mit einem Klick wieder nach Oben zu gelangen-->
     <a href="#top" class="pfeil-nach-oben"><img class="pfeil-nach-oben-bild" src="assets/Bilder/pfeil-nach-oben.png"
         alt="pfeil-nach-oben" title="nach oben"></a>
   </footer>
--->
+
   <script src="assets/js/game.js"></script>
 </body>
 
