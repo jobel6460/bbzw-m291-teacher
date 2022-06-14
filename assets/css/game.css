@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Tangerine&display=swap');
 
 body {
-  font-family: "Courier";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -0.5px;
 }
 
 .navigation{
   position: fixed;
   top: 0;
   width: 100%;
+  margin-top: -16px;
 }
 
 .navigation-liste{
@@ -40,6 +43,10 @@ body {
 }
 .game-titel{
   text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: -50px 0 0 0;
 }
 
 .content-game {
@@ -67,7 +74,7 @@ body {
 }
 
 .dino-dies {
-  background-color: red;
+  background-image: url(../Bilder/chad-75-red.png)!important;
 }
 
 #rock {
@@ -142,9 +149,13 @@ body {
 
 .gameRow {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
 }
+
 
 .gameOver {
   display: none;
@@ -170,7 +181,55 @@ body {
 
 }
 
-/*Styling des Footers
+#goodie {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 60px;
+  left: 550px;
+  background-image: url(../Bilder/choc.png);
+  background-size: cover;
+}
+
+.goodie-animation {
+  animation: goodie1 3.33s infinite;
+}
+
+@keyframes goodie1 {
+  0% {
+    left: 550px;
+  }
+
+  100% {
+    left: -50px;
+  }
+}
+
+@keyframes goodie2 {
+  0% {
+    left: 550px;
+    top: 100px;
+  }
+
+  100% {
+    left: -50px;
+    top: 20px;
+  }
+}
+
+@keyframes goodie3 {
+  0% {
+    left: 550px;
+    top: 100px;
+  }
+
+  100% {
+    left: -50px;
+    top: 0px;
+  }
+}
+
+/*Styling des Footers*/
 .footerinhalt{
   color: white;
   background-color: rgb(39, 34, 34);
@@ -180,7 +239,7 @@ body {
   margin-top: -750px;
   padding-right: 0;
   bottom: 0;
-  position: sticky;
+  position: fixed;
   width: 100%;
 }
 
@@ -201,4 +260,4 @@ body {
   width: 35px;
   height: 35px;
 }
-*/
+
