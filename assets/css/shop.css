@@ -24,18 +24,15 @@ h2{
 
 /*Styling des Headers*/
 header{
-    background-image: url(../Bilder/titelbild2.jpg);
-    color: white;
     text-align: center;
     background-size: cover;
     height: 300px;
-    margin-bottom: 100px;
 }
 
 header p{
     font-size: 5rem;
     font-family: 'Amatic SC', cursive;
-    padding-top: 60px;
+    padding-top: 130px;
 }
 
 /*Styling der Navigation*/
