@@ -3,173 +3,68 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Verlinkung des CSS files-->
-  <link href="assets/css/shop.css" rel="stylesheet">
-  <title>Shop</title>
+  <!--Verlinkung des CSS Files-->
+  <link rel="stylesheet" href="assets/css/formular.css">
+  <title>Anmelden</title>
 </head>
 
 <body>
+
   <!--Aufbau des Headers-->
   <header>
     <!--Aufbau der Navigation-->
     <nav class="navigation">
       <ul class="navigation-liste">
         <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html" id="hier">Shop</a></li>
+        <li><a href="shop.html">Shop</a></li>
         <!--Weiterleitung an Anmelde Seite bevor Besucher zu game kommt-->
-        <li><a href="formular.html">Chocolate Rush</a></li>
+        <li><a href="formular.html" id="hier">Chocolate Rush</a></li>
         <!--<li><a href="game.html">Chocolate Rush</a></li>-->
       </ul>
     </nav>
-
-    <p>SHOP</p>
-
   </header>
 
-  <!--Aufbau der Boxen-->
-  <div class="row">
-    <div class="column">
-      <div class="about-box">
-        <div class="product-placement">
-          <img class="produktbild" src="assets/Bilder/pink-rose.png" alt="pink-roses" title="Pink Roses">
-        </div>
-        <div class="container">
-          <h2>Pink Roses</h2>
-          <p class="title">Vegane Schokolade</p>
-          <p class="description">Hauseigene Schokolade mit Rosenblüten.</p>
-          <label for="menge">Menge:</label>
-          <select name="menge" id="menge">
-            <option value="eins">1</option>
-            <option value="zwei">2</option>
-            <option value="drei">3</option>
-            <option value="vier">4</option>
-            <option value="fuenf">5</option>
-          </select><br>
-          <p><button class="button">Warenkorb</button></p>
-          <br>
-        </div>
-      </div>
-    </div>
 
-    <div class="column">
-      <div class="about-box">
-        <div class="product-placement">
-          <img class="produktbild" src="assets/Bilder/salted-peanuts.png" alt="salted-peanuts" title="Salted Peanuts">
-        </div>
-        <div class="container">
-          <h2>Salted Peanuts</h2>
-          <p class="title">Vegane Schokolade</p>
-          <p class="description">Hauseigene Schokolade mit gesalzenen Erdnüssen.</p>
-          <label for="menge">Menge:</label>
-          <select name="menge" id="menge">
-            <option value="eins">1</option>
-            <option value="zwei">2</option>
-            <option value="drei">3</option>
-            <option value="vier">4</option>
-            <option value="fuenf">5</option>
-          </select><br>
-          <p><button class="button">Warenkorb</button></p>
-          <br>
-        </div>
-      </div>
-    </div>
+  <!--Aufbau der Formular Seite-->
+  <section class="formular">
+    <section class="anmeldeformular-inhalt">
 
-    <div class="column">
-      <div class="about-box">
-        <div class="product-placement">
-          <img class="produktbild" src="assets/Bilder/crispy-chocolat.png" alt="crispy-chocolate" title="Crispy Chocolate">
-        </div>
-        <div class="container">
-          <h2>Crispy Chocolate</h2>
-          <p class="title">Vegane Schokolade</p>
-          <p class="description">Hauseigene Schokolade mit Kakao-Splittern.</p>
-          <label for="menge">Menge:</label>
-          <select name="menge" id="menge">
-            <option value="eins">1</option>
-            <option value="zwei">2</option>
-            <option value="drei">3</option>
-            <option value="vier">4</option>
-            <option value="fuenf">5</option>
-          </select><br>
-          <p><button class="button">Warenkorb</button></p>
-          <br>
-        </div>
-      </div>
-    </div>
-  </div>
+      <h2>Anmelden</h2>
+      <p>Bevor Sie das Spiel spielen können, müssen Sie sich anmelden. </p>
 
-  <div class="row">
-    <div class="column">
-      <div class="about-box">
-        <div class="product-placement">
-          <img class="produktbild" src="assets/Bilder/ovo-choc.png" alt="ovo-choc" title="Ovo Schokolade">
-        </div>
-        <div class="container">
-          <h2>Ovo Schokolade</h2>
-          <p class="title">Milchschokolade</p>
-          <p class="description">Schokolade mit Ovomaltine Crunch.</p>
-          <label for="menge">Menge:</label>
-          <select name="menge" id="menge">
-            <option value="eins">1</option>
-            <option value="zwei">2</option>
-            <option value="drei">3</option>
-            <option value="vier">4</option>
-            <option value="fuenf">5</option>
-          </select><br>
-          <p><button class="button">Warenkorb</button></p>
-          <br>
-        </div>
-      </div>
-    </div>
+      <!--Aufbau des Formulars mit der validateForm FUnktion und der Aktion-->
+      <form name="anmeldeformular" class="anmeldeformular" onsubmit="return validateForm()">
 
-    <div class="column">
-      <div class="about-box">
-        <div class="product-placement">
-          <img class="produktbild" src="assets/Bilder/weiss.choc.png" alt="weiss-choc" title="Weisse Schokolade">
-        </div>
-        <div class="container">
-          <h2>Lindt Blanc</h2>
-          <p class="title">Weisse Schokolade</p>
-          <p class="description">Cremige weisse Schokolade von Lindt.</p>
-          <label for="menge">Menge:</label>
-          <select name="menge" id="menge">
-            <option value="eins">1</option>
-            <option value="zwei">2</option>
-            <option value="drei">3</option>
-            <option value="vier">4</option>
-            <option value="fuenf">5</option>
-          </select><br>
-          <p><button class="button">Warenkorb</button></p>
-          <br>
-        </div>
-      </div>
-    </div>
+        <div class="eingabefelder">
+          <!--Eingabefeld für den Nachnamen-->
+          <input type="text" id="name" name="name" placeholder="Name" required><br>
+          <!--div mit error Klasse und ...Err id für die Validierung-->
+          <div class="error" id="nameErr"></div>
 
-    <div class="column">
-      <div class="about-box">
-        <div class="product-placement">
-          <img class="produktbild" src="assets/Bilder/nuss-choc.png" alt="nuss-choc" title="Nuss Schokolade">
+          <!--Eingabefeld für den Vornamen-->
+          <input type="text" id="vorname" name="vorname" placeholder="Vorname" required><br>
+          <!--div mit error Klasse und ...Err id für die Validierung-->
+          <div class="error" id="vornameErr"></div>
+
+          <!--Eingabefeld für die E-Mail Adresse-->
+          <input type="email" id="mail" name="mail" placeholder="E-Mail" required>
+          <!--div mit error Klasse und ...Err id für die Validierung-->
+          <div class="error" id="mailErr"></div>
+
+        <!--Button um das Formular abzusenden-->
+        <div class="sendebutton">
+          <button type="submit" id="submit">Senden</button>
         </div>
-        <div class="container">
-          <h2>Lindt Milch-Nuss</h2>
-          <p class="title">Nuss Schokolade</p>
-          <p class="description">Lindt Milchschokolade mit Nüssen.</p>
-          <label for="menge">Menge:</label>
-          <select name="menge" id="menge">
-            <option value="eins">1</option>
-            <option value="zwei">2</option>
-            <option value="drei">3</option>
-            <option value="vier">4</option>
-            <option value="fuenf">5</option>
-          </select><br>
-          <p><button class="button">Warenkorb</button></p>
-          <br>
-        </div>
-      </div>
-    </div>
-  </div>
+      </form>
+
+      <!--Verlinkund der Javascript files-->
+      <script src="assets/js/validierung.js"></script>
+      <script src="assets/js/form.js"></script>
+      <script src="assets/js/database-client.js"></script>
+
+    </section>
+  </section>
 
   <!--Aufbau des Footers-->
   <footer class="footerinhalt">
